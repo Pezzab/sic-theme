@@ -5,7 +5,12 @@
  */
 
 /* @layer theme, base, components, utilities; */
-@config "./../../tailwind.config.js"; 
+@config "./../../tailwind.config.js";
+
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@plugin "@tailwindcss/typography";
+@import "tailwindcss/preflight.css" layer(base);
 
 @import "tailwindcss";
 
@@ -225,6 +230,11 @@ footer#colophon {
       /* @apply overflow-clip; */
   /* @apply relative; */
   }
+
+  article .entry-content,
+article header {
+    @apply prose-xl;
+}
 
   h1, h2, h3, h4, h5, h6 {
     /* @apply font-heading;  */

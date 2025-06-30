@@ -114,6 +114,10 @@ article,
 main > header {
 }
 
+main {
+  @apply overflow-clip; 
+}
+
 .entry-content,
 .entry-footer {
 }
@@ -227,8 +231,6 @@ footer#colophon {
   body {
     @apply font-sans;
     @apply text-copycol;
-      /* @apply overflow-clip; */
-  /* @apply relative; */
   }
 
   article .entry-content,
@@ -490,9 +492,14 @@ p {
   h2 {
     @apply relative;
     @apply font-fancy;
-    @apply text-[5em];
+    @apply text-[4.5em];
+    @apply sm:text-[5em];
     @apply w-fit;
-    @apply mx-auto;
+    
+    line-height: 0.8em;
+    margin: 0 0.5em;
+    @apply sm:m-0;
+    @apply sm:mx-auto;
   }
 
   h2::before {
@@ -587,12 +594,15 @@ p {
 }
 
 .swiper-button-prev, .swiper-rtl .swiper-button-next {
-  left: 2em;
+  @apply left-2;
+  @apply sm:left-8;
+  /* left: 2em; */
   right: auto;
 }
 
 .swiper-button-next, .swiper-rtl .swiper-button-prev {
-  right: 2em;
+ @apply right-2;
+  @apply sm:right-8;
   left: auto;
 }
 

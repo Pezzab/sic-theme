@@ -715,6 +715,9 @@ article .entry-content {
 .site-width header h1 {
   margin-top: calc(var(--spacing) * 8);
 }
+main {
+  overflow: clip;
+}
 .wp-block-column.textbg {
   flex-basis: 66.66%;
   background: #ffffff82;
@@ -1081,9 +1084,19 @@ button.menu-toggle {
   h2 {
     position: relative;
     font-family: var(--font-fancy);
-    font-size: 5em;
+    font-size: 4.5em;
+    @media (width >= 640px) {
+      font-size: 5em;
+    }
     width: fit-content;
-    margin-inline: auto;
+    line-height: 0.8em;
+    margin: 0 0.5em;
+    @media (width >= 640px) {
+      margin: calc(var(--spacing) * 0);
+    }
+    @media (width >= 640px) {
+      margin-inline: auto;
+    }
   }
   h2::before {
     border-radius: 100% 100% 100% 100%;
@@ -1153,11 +1166,17 @@ button.menu-toggle {
   font-weight: var(--font-weight-bold);
 }
 .swiper-button-prev, .swiper-rtl .swiper-button-next {
-  left: 2em;
+  left: calc(var(--spacing) * 2);
+  @media (width >= 640px) {
+    left: calc(var(--spacing) * 8);
+  }
   right: auto;
 }
 .swiper-button-next, .swiper-rtl .swiper-button-prev {
-  right: 2em;
+  right: calc(var(--spacing) * 2);
+  @media (width >= 640px) {
+    right: calc(var(--spacing) * 8);
+  }
   left: auto;
 }
 article {

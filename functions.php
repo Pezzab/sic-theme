@@ -7,13 +7,6 @@ $parent_style = 'parent-style';
 }
 add_action( 'wp_enqueue_scripts', 'sic_theme_enqueue_styles' ); 
 
-function sic_theme_unhook_parent_style() {
-
-  wp_dequeue_style( 'websussed-core' );
-  wp_deregister_style( 'websussed-core' );
-
-}
-// add_action( 'wp_enqueue_scripts', 'sic_theme_unhook_parent_style', 20 );
 
 function webussed_child_add_fonts() {
 
@@ -46,3 +39,4 @@ function webussed_child_add_fonts() {
 
 add_action( 'wp_enqueue_scripts', 'webussed_child_add_fonts' );
 
+add_image_size( 'feature-full-width', 1792, 480, true ); // 220 pixels wide by 180 pixels tall, hard crop mode

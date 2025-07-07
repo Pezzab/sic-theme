@@ -88,10 +88,6 @@ article .entry-content {
   /* @apply px-4; */
 }
 
-.site-width header h1 {
-  @apply mt-8;
-}
-
 /* ________________________________________________________________   main layout */
 
 /* _____________________   horizontal and vertical padding */
@@ -216,6 +212,32 @@ main#primary .site-width {
 }
 
 
+/* ___________________________________________   adjust width for blog post display page */
+
+
+.blog {
+
+    main > header .site-width > *,
+    article header > *,
+    article .post-thumbnail > *,
+    .entry-content,
+    .entry-summary > *,
+    .post-navigation > *,
+    .posts-navigation > *,
+    #breadcrumbs .site-width div,
+    .comments-area > *,
+    .widget > *,
+    .entry-footer > *,
+    .content_wysiwyg .site-width > * {
+      @apply w-full;
+      @apply max-w-full;
+      @apply mx-0;
+
+    }
+
+}
+
+
 /* ________________________________________________________________  footer layout */
 
 /* _____________________   horizontal and vertical padding */
@@ -236,13 +258,19 @@ footer#colophon {
   }
 
   article .entry-content,
-article header {
+  article header,
+  .site-width.archive header {
     @apply prose-xl;
-}
+  }
 
   h1, h2, h3, h4, h5, h6 {
     /* @apply font-heading;  */
   }
+
+  .site-width .entry-header h1 {
+    @apply mt-8;
+  }
+
 
   a {
     @apply text-maincol;
@@ -280,6 +308,7 @@ article header {
     @apply text-8xl;
     @apply mt-16;
     @apply mb-4;
+    @apply px-4;
   }
 
   .wp-block-buttons {
@@ -735,7 +764,8 @@ footer.site-footer {
     }
 }
 
-.before_content::before {
+.before_content::before,
+.after_content.contact-me::before {
 content: '';
   background-image: url('images/wave.svg');
   width: 100%;
@@ -747,6 +777,15 @@ content: '';
   top: 0;
   left: 0;
   background-position: top;
+}
+
+.after_content.contact-me {
+  position: relative;
+  margin-bottom: -155px;
+}
+
+.after_content.contact-me::before {
+  top: -30px;
 }
 
 .before_content::after {
@@ -844,7 +883,8 @@ content: '';
 
   /* ___________________________________________   wp-block-columns */
 
-   .wp-block-columns.pricing {
+   .wp-block-columns.pricing,
+   .blog-display {
        /* @apply lg:!flex-wrap; */
        @apply lg:!grid;
        @apply gap-8;
@@ -860,7 +900,8 @@ content: '';
   
   }
 
-   .wp-block-columns.pricing .wp-block-column {
+   .wp-block-columns.pricing .wp-block-column,
+   .blog-display article {
      border-radius: 3em;
   background-color: #d6d5e380;
     /* @apply mx-2; */
@@ -870,6 +911,10 @@ content: '';
     display: flex;
   justify-content: space-between;
   flex-direction: column;
+}
+
+.blog-display article {
+  @apply text-left;
 }
 
 

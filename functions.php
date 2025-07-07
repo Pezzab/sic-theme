@@ -32,11 +32,11 @@ function webussed_child_add_fonts() {
 
     // https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS+Guides&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap
 
-
-
-
 }
 
 add_action( 'wp_enqueue_scripts', 'webussed_child_add_fonts' );
 
-add_image_size( 'feature-full-width', 1792, 480, true ); // 220 pixels wide by 180 pixels tall, hard crop mode
+/**
+ * Custom template tags for this theme.
+ */
+require get_template_directory() . '/inc/template-tags.php';

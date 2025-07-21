@@ -716,7 +716,7 @@ article .entry-content {
   padding-inline: calc(var(--spacing) * 4);
   padding-top: calc(var(--spacing) * 2);
 }
-main {
+.site {
   overflow: clip;
 }
 .wp-block-column.textbg {

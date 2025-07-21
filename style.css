@@ -1017,9 +1017,6 @@ article .entry-content p {
   font-size: var(--text-2xl);
   line-height: var(--tw-leading, var(--text-2xl--line-height));
 }
-.site-info {
-  text-align: right;
-}
 .site-title {
   font-family: var(--font-fancy);
   font-size: var(--text-8xl);
@@ -1150,19 +1147,20 @@ button.menu-toggle {
 }
 .before_content .site-width div {
   margin-top: calc(var(--spacing) * 10);
-  a {
-    width: max-content;
+  button {
+    display: block;
     margin-inline: auto;
-    button {
-      color: var(--color-white);
-      display: block;
+    padding: calc(var(--spacing) * 4);
+    background-color: var(--color-teal-600);
+    background-color: var(--color-maincol);
+    border-radius: var(--radius-md);
+    font-size: 1.4em;
+    cursor: pointer;
+    a {
+      width: max-content;
       margin-inline: auto;
-      padding: calc(var(--spacing) * 4);
-      background-color: var(--color-teal-600);
-      background-color: var(--color-maincol);
-      border-radius: var(--radius-md);
-      font-size: 1.4em;
-      cursor: pointer;
+      color: var(--color-white);
+      position: relative;
     }
   }
 }

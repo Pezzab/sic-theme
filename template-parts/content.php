@@ -23,8 +23,6 @@
 		
 				<div class="post-container">
 
-					
-
 					<header class="entry-header">
 						<?php
 						if ( is_singular() ) :

@@ -328,10 +328,6 @@ footer#colophon {
 
   }
 
-  .site-info {
-    @apply text-right;
-  }
-
   .site-title {
     @apply font-fancy;
     @apply text-8xl;
@@ -603,12 +599,7 @@ background: radial-gradient(circle,rgba(45, 22, 149, 0.59) 50%, rgba(237, 221, 8
 
   @apply mt-10;
 
-  a {
-    @apply w-max;
-    @apply mx-auto;
-
       button {
-      @apply text-white;
       @apply block;
       @apply mx-auto;
       @apply p-4;
@@ -618,10 +609,14 @@ background: radial-gradient(circle,rgba(45, 22, 149, 0.59) 50%, rgba(237, 221, 8
       /* font-size: 1.4em; */
       @apply text-[1.4em];
       @apply cursor-pointer;
+
+      a {
+          @apply w-max;
+          @apply mx-auto;
+          @apply text-white;
+          @apply relative;
+        }
     }
-  }
-
-
 }
 
 .swiper-slide.showbgimg-no .site-width {

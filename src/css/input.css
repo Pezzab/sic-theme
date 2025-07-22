@@ -385,6 +385,26 @@ button.menu-toggle {
   @apply opacity-100;
 }
 
+li.current-menu-parent button {
+  @apply bg-copycol;
+  @apply text-bodycol;
+  @apply rounded-md;
+}
+
+li.current-menu-parent > button::after {
+  border-left-color: var( --color-bodycol );
+}
+
+li.current-menu-item a {
+  @apply bg-maincol;
+  @apply text-bodycol;
+  @apply rounded-md;
+}
+
+.nav-menu ul.sub-menu {
+  @apply p-2;
+}
+
 .burger {
 }
 

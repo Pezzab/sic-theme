@@ -1067,6 +1067,22 @@ button.menu-toggle {
 .menu-toggle {
   opacity: 100%;
 }
+li.current-menu-parent button {
+  background-color: var(--color-copycol);
+  color: var(--color-bodycol);
+  border-radius: var(--radius-md);
+}
+li.current-menu-parent > button::after {
+  border-left-color: var( --color-bodycol );
+}
+li.current-menu-item a {
+  background-color: var(--color-maincol);
+  color: var(--color-bodycol);
+  border-radius: var(--radius-md);
+}
+.nav-menu ul.sub-menu {
+  padding: calc(var(--spacing) * 2);
+}
 .burger, .burger::before, .burger::after {
   background: #f9f9f9;
 }

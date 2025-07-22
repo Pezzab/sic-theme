@@ -11,13 +11,6 @@
 
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-<?php
-		if ( ! is_home() ) :
-			echo websussed_core_custom_content( 'before_content' ) ;
-		endif ;
-?>
-
-	<?php websussed_core_yoast_breadcrumb() ?>
 			<div class="site-width">
 
 		
@@ -84,11 +77,6 @@
 						<?php // websussed_core_entry_footer(); ?>
 					</footer><!-- .entry-footer -->
 				</div>
-
-<?php		if ( ! is_home() ) :
-				get_sidebar();
-			endif ;
-?>
 
 			</div><!-- .site-width -->
 

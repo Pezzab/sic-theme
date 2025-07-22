@@ -29,7 +29,9 @@
     --color-copycol: #281850;
     --color-ctacol: orange;
     --color-maincol: #391cbe;
-    --color-linkdarkbg: #0097cc;
+    /* --color-linkdarkbg: #0097cc; */
+    --color-linkdarkbg: #67ccee;
+ /* --color-linkdarkbg: #d2cfeb; */
 }
 
 :root {
@@ -365,7 +367,7 @@ a.wp-block-button__link.wp-element-button {
    padding: calc(var(--spacing) * 4);
 }
 
-/* ________________________________________________________________   responsive nav-menu button */
+/* ________________________________________________________________   nav-menu styles */
 
 .nav-menu {
   @apply text-[1.5em];
@@ -600,9 +602,7 @@ background: radial-gradient(circle,rgba(45, 22, 149, 0.59) 50%, rgba(237, 221, 8
   @apply mt-10;
 
       button {
-      @apply block;
       @apply mx-auto;
-      @apply p-4;
       @apply bg-teal-600;
       @apply bg-maincol;
       @apply rounded-md;
@@ -615,6 +615,8 @@ background: radial-gradient(circle,rgba(45, 22, 149, 0.59) 50%, rgba(237, 221, 8
           @apply mx-auto;
           @apply text-white;
           @apply relative;
+          @apply p-4;
+          @apply block;
         }
     }
 }
@@ -868,6 +870,8 @@ content: '';
 
   a {
     @apply text-bodycol;
+    
+    
   }
 
 

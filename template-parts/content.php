@@ -14,13 +14,13 @@
 <?php
 		if ( ! is_home() ) :
 			echo websussed_core_custom_content( 'before_content' ) ;
+			websussed_core_yoast_breadcrumb() ;
 		endif ;
 ?>
 
-	<?php websussed_core_yoast_breadcrumb() ?>
+	<?php ?>
 			<div class="site-width">
 
-		
 				<div class="post-container">
 
 					<header class="entry-header">

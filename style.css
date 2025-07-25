@@ -1083,7 +1083,8 @@ article .entry-content p {
     line-height: var(--tw-leading, var(--text-9xl--line-height));
   }
   text-align: center;
-  @media (width >= 640px) {
+  text-align: right;
+  @media (width >= 768px) {
     text-align: left;
   }
   margin-top: calc(var(--spacing) * 16);
@@ -1212,7 +1213,10 @@ li.current-menu-item a {
 .before_content .site-width h2 {
   position: relative;
   font-family: var(--font-fancy);
-  font-size: 3em;
+  font-size: 2.4em;
+  @media (width >= 640px) {
+    font-size: 4em;
+  }
   width: fit-content;
   z-index: 10;
   max-width: 680px;
@@ -1223,9 +1227,6 @@ li.current-menu-item a {
   font-size: 2.5em;
   @media (width >= 640px) {
     font-size: 4.5em;
-  }
-  @media (width >= 640px) {
-    font-size: 5em;
   }
   @media (width >= 640px) {
     margin: calc(var(--spacing) * 0);

@@ -387,7 +387,8 @@ footer#colophon {
     @apply sm:text-8xl;
     @apply md:text-9xl;
     @apply text-center;
-    @apply sm:text-left;
+    @apply text-right;
+    @apply md:text-left;
     @apply mt-16;
     @apply mb-4;
     @apply md:mb-16;
@@ -642,7 +643,9 @@ background: radial-gradient(circle,rgba(45, 22, 149, 0.59) 50%, rgba(237, 221, 8
   .before_content .site-width h2 {
     @apply relative;
     @apply font-fancy;
-    @apply text-[3em];
+    @apply text-[2.4em];
+    @apply sm:text-[4em];
+    /* @apply sm:text-[5em]; */
     /* @apply sm:text-[5em]; */
     @apply w-fit;
     @apply z-10;
@@ -655,7 +658,7 @@ background: radial-gradient(circle,rgba(45, 22, 149, 0.59) 50%, rgba(237, 221, 8
   .home .before_content .site-width h2 {
     @apply text-[2.5em];
     @apply sm:text-[4.5em];
-    @apply sm:text-[5em];
+    /* @apply sm:text-[5em]; */
        @apply sm:m-0;
     @apply sm:mx-auto;
       max-width: 800px;

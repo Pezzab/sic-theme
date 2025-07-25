@@ -807,7 +807,9 @@ footer.site-footer {
 
         img {
           @apply pb-8;
-          @apply px-16;
+          @apply mx-auto;
+          /* @apply max-h-[400px]: */
+          max-height: 400px;
         }
       }
 
@@ -840,7 +842,8 @@ footer.site-footer {
 
     h2 {
       @apply font-fancy;
-      @apply text-8xl;
+      @apply text-6xl;
+      @apply md:text-8xl;
       @apply mb-4;
       @apply px-4;
     }

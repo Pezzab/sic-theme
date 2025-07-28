@@ -435,13 +435,14 @@ button.menu-toggle {
 }
 
 li.current-menu-parent button {
-  @apply bg-copycol;
-  @apply text-bodycol;
+  @apply border-copycol;
+  @apply border-2;
+  @apply text-copycol;
   @apply rounded-md;
 }
 
 li.current-menu-parent > button::after {
-  border-left-color: var( --color-bodycol );
+  border-left-color: var( --color-copycol );
 }
 
 li.current-menu-item a {

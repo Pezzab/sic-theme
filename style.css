@@ -1128,12 +1128,14 @@ button.menu-toggle {
   opacity: 100%;
 }
 li.current-menu-parent button {
-  background-color: var(--color-copycol);
-  color: var(--color-bodycol);
+  border-color: var(--color-copycol);
+  border-style: var(--tw-border-style);
+  border-width: 2px;
+  color: var(--color-copycol);
   border-radius: var(--radius-md);
 }
 li.current-menu-parent > button::after {
-  border-left-color: var( --color-bodycol );
+  border-left-color: var( --color-copycol );
 }
 li.current-menu-item a {
   background-color: var(--color-maincol);
